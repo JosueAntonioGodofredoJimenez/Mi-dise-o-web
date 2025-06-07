@@ -218,6 +218,63 @@ th {
     color: #fff;
 }
 
+#comparativa-categorias {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+#comparativa-categorias table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    /* permite scroll horizontal en pantallas pequeñas */
+}
+
+#comparativa-categorias caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#comparativa-categorias th,
+#comparativa-categorias td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+#comparativa-categorias th:first-child,
+#comparativa-categorias td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+#comparativa-categorias img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    display: block;
+    border-radius: 8px;
+}
+
+#comparativa-categorias .boton-compra {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#comparativa-categorias .boton-compra:hover {
+    background-color: #388E3C;
+}
+
 /* IMAGENES */
 img {
     max-width: 100%;

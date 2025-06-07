@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Ecovida</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Encabezado -->
+        <header class="header">
+            <img src="imagen logo/logo.jpg" alt="Logo Ecovida" style="max-height: 80px; border-radius: 8px;" />
+            <h1>Ecovida</h1>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="contenido">
+            <figure>
+                <img src="imagen de fondo/startups-peruanas-2020.jpg" alt="Imagen de fondo" />
+            </figure>
+
+            <!-- Vida Eco -->
+            <section id="vida-eco">
+                <h2>Vida Eco</h2>
+                <p>
+                    Somos una novedosa tienda ecológica que se vincula con sus clientes en favor del cuidado ambiental.
+                </p>
+                <img src="presentacion.jpg" alt="Imagen Vida Eco" />
+            </section>
+
+            <!-- Catálogo de productos -->
+            <section id="catalogo-productos">
+                <h2>Catálogo de Productos</h2>
+                <ul>
+                    <li>Harinas</li>
+                    <li>Cereales</li>
+                    <li>Bebidas</li>
+                    <li>Suplementos</li>
+                    <li>Endulzantes</li>
+                    <li>Snacks</li>
+                </ul>
+                <img src="habilidades.jpg" alt="Imagen de productos" />
+            </section>
+
+            <!-- Cocina -->
+            <section id="cocina">
+                <h2>Cocina</h2>
+                <ul>
+                    <li>Diseño de sitios web personalizados</li>
+                    <li>Consultoría en experiencia de usuario</li>
+                    <li>Prototipado de interfaces</li>
+                    <li>Optimización de diseño para móviles</li>
+                </ul>
+                <img src="servicios.jpg" alt="Imagen cocina" />
+                <a href="#eco-productos" class="boton-compra">Ver planes</a>
+            </section>
+
+            <!-- Eco productos -->
+            <section id="eco-productos">
+                <h2>Eco Productos</h2>
+                <table>
+                    <caption>Elige el plan que mejor se adapte a ti</caption>
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th>Plan Básico</th>
+                            <th>Plan Profesional</th>
+                            <th>Plan Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Páginas incluidas</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño personalizado</td>
+                            <td>No</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                        </tr>
+                        <tr>
+                            <td>Optimización móvil</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                        </tr>
+                        <tr>
+                            <td>Soporte técnico</td>
+                            <td>Correo</td>
+                            <td>Chat</td>
+                            <td>Teléfono y chat</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="planes.jpg" alt="Imagen ilustrativa de eco productos" />
+                <a href="#alimentacion" class="boton-compra">Contratar ahora</a>
+            </section>
+
+            <!-- Alimentación -->
+            <section id="alimentacion">
+                <h2>Alimentación</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required />
+
+                    <button type="submit" class="boton-compra">Enviar</button>
+                </form>
+                <img src="contacto.jpg" alt="Imagen de contacto" />
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Ofertas del día</h3>
+            <ul>
+                <li>Packs de jabones artesanales</li>
+                <li>Cuidado personal</li>
+                <li>Campamento</li>
+                <li>Aceites esenciales</li>
+            </ul>
+        </aside>
+
+        <!-- Widgets -->
+        <div class="widget-1">
+            <h3>WIDGET 1</h3>
+        </div>
+
+        <div class="widget-2">
+            <h3>WIDGET 2</h3>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Ecovida. Todos los derechos reservados.</p>
+            <p><a href="#vida-eco">Volver arriba</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -4,38 +4,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ecovida - Tienda ecológica y sostenible. Productos, recetas y consejos para una vida saludable." />
     <title>Landing Page - Ecovida</title>
+
+    <!-- Fuentes y estilos -->
     <link rel="stylesheet" href="estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-leaf"></i> Ecovida</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#presentacion">Vida Eco</a></li>
+            <li><a href="#cocina">Cocina</a></li>
+            <li><a href="#alimentacion">Alimentación</a></li>
+            <li><a href="#ecoproductos">Eco Productos</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
     <div class="contenedor">
-        <!-- Encabezado -->
-        <header class="header">
-            <img src="imagen logo/logo.jpg" alt="Logo Ecovida" style="max-height: 80px; border-radius: 8px;" />
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <img src="imagen logo/logo.jpg" alt="Logo Ecovida" class="logo-empresa" />
             <h1>Ecovida</h1>
         </header>
 
-        <!-- Contenido principal -->
+        <!-- MAIN -->
         <main class="contenido">
             <figure>
-                <img src="imagen de fondo/startups-peruanas-2020.jpg" alt="Imagen de fondo" />
+                <img src="imagen de fondo/startups-peruanas-2020.jpg" alt="Emprendimiento ecológico" />
             </figure>
 
-            <!-- Vida Eco -->
-            <section id="vida-eco">
+            <section id="presentacion">
                 <h2>Vida Eco</h2>
-                <p>
-                    Somos una novedosa tienda ecológica que se vincula con sus clientes en favor del cuidado ambiental.
+                <p>Somos una novedosa tienda ecológica que se vincula con sus clientes en favor del cuidado ambiental.
                 </p>
-                <img src="presentacion.jpg" alt="Imagen Vida Eco" />
+                <img src="presentacion.jpg" alt="Tienda ecológica Vida Eco" />
             </section>
 
-            <!-- Catálogo de productos -->
-            <section id="catalogo-productos">
+            <section id="cocina">
+                <h2>Cocina</h2>
+                <p>Recetas y productos ecológicos para tu cocina saludable.</p>
+                <img src="cocina.jpg" alt="Cocina ecológica" />
+            </section>
+
+            <section id="alimentacion">
+                <h2>Alimentación</h2>
+                <p>Consejos y productos para una nutrición sostenible.</p>
+                <img src="alimentacion.jpg" alt="Nutrición ecológica" />
+            </section>
+
+            <section id="ecoproductos">
+                <h2>Eco Productos</h2>
+                <p>Ofrecemos alternativas sostenibles para el hogar y la vida diaria.</p>
+                <img src="ecoproductos.jpg" alt="Productos ecológicos" />
+            </section>
+
+            <section id="catalogo">
                 <h2>Catálogo de Productos</h2>
                 <ul>
                     <li>Harinas</li>
@@ -45,75 +82,88 @@
                     <li>Endulzantes</li>
                     <li>Snacks</li>
                 </ul>
-                <img src="habilidades.jpg" alt="Imagen de productos" />
+                <img src="catalogo.jpg" alt="Catálogo de productos ecológicos" />
             </section>
 
-            <!-- Cocina -->
-            <section id="cocina">
-                <h2>Cocina</h2>
-                <ul>
-                    <li>Diseño de sitios web personalizados</li>
-                    <li>Consultoría en experiencia de usuario</li>
-                    <li>Prototipado de interfaces</li>
-                    <li>Optimización de diseño para móviles</li>
-                </ul>
-                <img src="servicios.jpg" alt="Imagen cocina" />
-                <a href="#eco-productos" class="boton-compra">Ver planes</a>
-            </section>
-
-            <!-- Eco productos -->
-            <section id="eco-productos">
-                <h2>Eco Productos</h2>
+            <section id="comparativa-categorias">
+                <h2>Comparativa de Categorías</h2>
                 <table>
-                    <caption>Elige el plan que mejor se adapte a ti</caption>
+                    <caption>Beneficios según el tipo de producto</caption>
                     <thead>
                         <tr>
-                            <th>Características</th>
-                            <th>Plan Básico</th>
-                            <th>Plan Profesional</th>
-                            <th>Plan Premium</th>
+                            <th>Beneficios</th>
+                            <th>Harinas</th>
+                            <th>Cereales</th>
+                            <th>Bebidas</th>
+                            <th>Suplementos</th>
+                            <th>Endulzantes</th>
+                            <th>Snacks</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Páginas incluidas</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>10</td>
+                            <td>Rico en fibra</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>✔️</td>
                         </tr>
                         <tr>
-                            <td>Diseño personalizado</td>
-                            <td>No</td>
-                            <td>Sí</td>
-                            <td>Sí</td>
+                            <td>Bajo en azúcar</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
                         </tr>
                         <tr>
-                            <td>Optimización móvil</td>
-                            <td>Sí</td>
-                            <td>Sí</td>
-                            <td>Sí</td>
+                            <td>Apto para veganos</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                         </tr>
                         <tr>
-                            <td>Soporte técnico</td>
-                            <td>Correo</td>
-                            <td>Chat</td>
-                            <td>Teléfono y chat</td>
+                            <td>Alto en proteína</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Fuente de energía</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                         </tr>
                     </tbody>
                 </table>
-                <img src="planes.jpg" alt="Imagen ilustrativa de eco productos" />
-                <a href="#alimentacion" class="boton-compra">Contratar ahora</a>
+                <img src="comparativa-categorias.jpg" alt="Tabla comparativa de beneficios por categoría" />
+                <a href="#catalogo" class="boton-compra">Ver catálogo completo</a>
             </section>
 
-            <!-- Alimentación -->
-            <section id="alimentacion">
-                <h2>Alimentación</h2>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            <section id="formulario">
+                <h2>Contacto</h2>
+                <form action="#" method="post" class="formulario-contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-                    <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required />
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="5"
+                        required></textarea>
 
                     <button type="submit" class="boton-compra">Enviar</button>
                 </form>
@@ -121,18 +171,18 @@
             </section>
         </main>
 
-        <!-- Sidebar -->
+        <!-- ASIDE -->
         <aside class="sidebar">
             <h3>Ofertas del día</h3>
             <ul>
                 <li>Packs de jabones artesanales</li>
-                <li>Cuidado personal</li>
-                <li>Campamento</li>
+                <li>Kit de cuidado personal</li>
+                <li>Pack de campamento</li>
                 <li>Aceites esenciales</li>
             </ul>
         </aside>
 
-        <!-- Widgets -->
+        <!-- WIDGETS -->
         <div class="widget-1">
             <h3>WIDGET 1</h3>
         </div>
@@ -141,36 +191,21 @@
             <h3>WIDGET 2</h3>
         </div>
 
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer class="footer">
             <p>© 2025 Ecovida. Todos los derechos reservados.</p>
-            <p><a href="#vida-eco">Volver arriba</a></p>
+            <p><a href="#header" class="volver-arriba">Volver arriba</a></p>
         </footer>
     </div>
+
+    <!-- SCRIPT RESPONSIVE MENU -->
     <script>
         const toggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
-
         toggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
     </script>
-
 </body>
-
-<!-- Barra de navegación -->
-<nav class="navbar">
-    <div class="logo">🌱 Ecovida</div>
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-    <ul class="nav-links" id="nav-links">
-        <li><a href="#presentacion">Vida Eco</a></li>
-        <li><a href="#cocina">Cocina</a></li>
-        <li><a href="#alimentacion">Alimentación</a></li>
-        <li><a href="#ecoproductos">Eco Productos</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#formulario">Contacto</a></li>
-    </ul>
-</nav>
-
 
 </html>
